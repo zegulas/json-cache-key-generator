@@ -51,7 +51,7 @@ function sortObjectKeys(obj) {
     }, {});
 };  
 
-function generateCacheKeyFromJson(queryParamsJson) {
+export function generateCacheKeyFromJson(queryParamsJson) {
   try {
     // Step 1: Parse the JSON string
     const queryParamsObj = JSON.parse(queryParamsJson);
@@ -74,5 +74,3 @@ function generateCacheKeyFromJson(queryParamsJson) {
     throw err; // or return an error value, or handle it however you see fit
   }
 };
-
-exports.module = generateCacheKeyFromJson;
