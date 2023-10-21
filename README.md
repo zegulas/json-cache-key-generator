@@ -19,7 +19,7 @@ npm install json-cache-key-generator
 ## Usage
 
 ```javascript
-import { generateCacheKeyFromJson } from 'json-cache-key-generator';
+const generateCacheKeyFromJson = require('json-cache-key-generator');
 
 // The JSON object for which we're generating a key
 const jsonObj = `{
